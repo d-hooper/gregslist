@@ -8,6 +8,8 @@ export class HousesController {
   constructor() {
     console.log('Ready to control you domicile! 🏠🎮');
     
+    AppState.on('houses', this.drawHouses)
+
     this.drawHouses()
   }
 
@@ -30,7 +32,7 @@ export class HousesController {
     const houseData = getFormData(houseFormElem)
     console.log('form', houseData);
 
-    // housesService.createHouse(houseData)
+    housesService.createHouse(houseData)
   }
   
   deleteHouseListing(houseId) {

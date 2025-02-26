@@ -22,7 +22,7 @@ export class House {
   get cardHTMLTemplate() {
     return `
   <div class="col-12">
-    <div class="shadow d-flex">
+    <div class="shadow d-flex my-3">
       <div class="flex-grow-1 p-3">
         <div class="d-flex justify-content-between fs-4 fw-bold">
           <p>Built in ${this.year}</p>
