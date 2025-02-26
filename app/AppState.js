@@ -1,4 +1,5 @@
 import { Car } from './models/Car.js'
+import { House } from './models/House.js'
 import { EventEmitter } from './utils/EventEmitter.js'
 import { createObservableProxy } from './utils/ObservableProxy.js'
 
@@ -54,6 +55,55 @@ class ObservableAppState extends EventEmitter {
       imgUrl: 'https://hips.hearstapps.com/hmg-prod/amv-prod-cad-assets/images/02q4/267343/subaru-baja-photo-9829-s-original.jpg?fill=1:1&resize=1200:*'
     }),
   ]
+
+
+  houses = [
+    new House(
+      {
+        year: '1974',
+        bedrooms: 3,
+        bathrooms: 2.5,
+        sqft: 1400,
+        price: 375000,
+        description: 'Newly renovated mid-century modern home',
+        imgUrl: 'https://rew-feed-images.global.ssl.fastly.net/imls/_cloud_media/property/residentialincome/98862307-1-835976ecc96808a93ea194115ae6c537-m.jpg'
+      }
+    ),
+    new House(
+      {
+        year: '1989',
+        bedrooms: 3,
+        bathrooms: 2,
+        sqft: 1150,
+        price: 250000,
+        description: 'Fixer-upper starter home from the late 1980s',
+        imgUrl: 'https://rew-feed-images.global.ssl.fastly.net/imls/_cloud_media/property/residentialincome/98862307-1-835976ecc96808a93ea194115ae6c537-m.jpg'
+      }
+    ),
+    new House(
+      {
+        year: '1925',
+        bedrooms: 4,
+        bathrooms: 3,
+        sqft: 2650,
+        price: 690000,
+        description: 'Newly renovated early 20th-century home',
+        imgUrl: 'https://rew-feed-images.global.ssl.fastly.net/imls/_cloud_media/property/residentialincome/98862307-1-835976ecc96808a93ea194115ae6c537-m.jpg'
+      }
+    ),
+    new House(
+      {
+        year: '2016',
+        bedrooms: 5,
+        bathrooms: 3,
+        sqft: 3420,
+        price: 825000,
+        description: 'Recently built 2-story home',
+        imgUrl: 'https://rew-feed-images.global.ssl.fastly.net/imls/_cloud_media/property/residentialincome/98862307-1-835976ecc96808a93ea194115ae6c537-m.jpg'
+      }
+    ),
+  ]
+
 }
 
 export const AppState = createObservableProxy(new ObservableAppState())
