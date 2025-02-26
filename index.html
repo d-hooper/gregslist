@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="assets/style/main.css">
   <link rel="stylesheet" href="assets/style/style.css">
-  <title>gregslist</title>
+  <title>Gregslist</title>
 </head>
 
 <body data-bs-theme="light">
@@ -17,13 +17,77 @@
   <header>
     <nav class="navbar bg-codeworks text-light gap-2 px-2">
       <img src="./assets/img/logo.png" height="45" alt="" loading="lazy">
-      <div><b>Gregslist</b></div>
+      <div><h1 class="fs-3 fw-bold">Gregslist</h1></div>
       <div class="ms-auto" id="authstate"></div>
     </nav>
   </header>
 
   <main>
-    <!-- NOTE Houses -->
+    <!-- NOTE House Form/Listings -->
+    <section class="container">
+      <div class="row mt-2">
+        <div class="col-12">
+          <h2 class="fs-1">Houses</h2>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="row mt-2 mb-4">
+        <div class="col-12">
+          <h3 class="pb-2">List your house</h3>
+        </div>
+        <div class="col-6">
+          <div class="text-center">
+
+            <img class="house-form-img form-img img-fluid" src="https://images.unsplash.com/photo-1552903023-dc7b4c9fa5bf?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A brown house with green accents and a slanted roof">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="shadow px-5 py-4">
+
+            <form onsubmit="">
+              <div class="mb-3">
+                <label for="houseYear">House Year</label>
+                <input id="houseYear" name="year" type="number" required min="1637" max="2025"
+                       placeholder="2015">
+              </div>
+              <div class="mb-3">
+                <label for="housePrice">Price</label>
+                <input id="housePrice" name="price" type="number" required min="0" max="100000000" placeholder="450,000">
+              </div>
+              <div class="mb-3">
+                <label for="houseSqft">Square Footage</label>
+                <input id="houseSqft" name="sqft" type="number" required min="0" max="100000"
+                       placeholder="1,500 ft.">
+              </div>
+              <div class="mb-3">
+                <label for="numOfBedrooms">Number of Bedrooms</label>
+                <input id="numOfBedrooms" name="bedrooms" type="number" required min="1" max="100"
+                       placeholder="3">
+              </div>
+              <div class="mb-3">
+                <label for="numOfBathrooms">Number of Bathrooms</label>
+                <input id="numOfBathrooms" name="bathrooms" type="number" required min="1" max="20"
+                       placeholder="2">
+              </div>
+              <div class="mb-3">
+                <label for="houseDescription">House Description</label>
+                <input id="houseDescription" name="description" type="text" required min="20" max="120"
+                       placeholder="Please include a short description">
+              </div>
+              <div class="d-flex">
+                <button class="btn btn-outline-danger me-2" type="reset">
+                  Reset
+                </button>
+                <button class="btn btn-outline-dark" type="submit">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="container">
       <div id="houseListings" class="row">
         <!-- STUB house card template 
@@ -54,7 +118,7 @@
       </div>
     </section>
 
-    <!-- NOTE Cars -->
+    <!-- NOTE Car Form/Listings -->
     <section class="container">
       <div class="row mt-2">
         <div class="col-12">
@@ -63,7 +127,7 @@
       </div>
     </section>
     <section class="container">
-      <div class="row mb-3">
+      <div class="row mb-3 align-items-center justify-content-center">
         <div class="col-12">
           <h3>List Your Car</h3>
         </div>
@@ -73,7 +137,7 @@
               <div class="mb-3">
                 <label for="carMake">Car Make</label>
                 <input id="carMake" name="make" type="text" required minlength="3" maxlength="20"
-                  placeholder="Car Make...">
+                       placeholder="Car Make...">
               </div>
               <div class="mb-3">
                 <label for="carModel">Car Model</label>
@@ -98,7 +162,7 @@
               <div class="mb-3">
                 <label for="carEngineType">Car Engine Type</label>
                 <input id="carEngineType" name="engineType" type="text" required maxlength="50"
-                  placeholder="Car Engine Type...">
+                       placeholder="Car Engine Type...">
               </div>
               <div class="mb-3">
                 <label for="carColor">Car Color</label>
@@ -125,14 +189,15 @@
           </div>
         </div>
         <div class="col-md-6">
-          <img
-            src="https://images.unsplash.com/photo-1530065928592-fb0dc85d2f27?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGNhciUyMHB1cmNhaHNlfGVufDB8MXwwfHx8Mg%3D%3D"
-            alt="Ladies in the back of a subaru baja" class="img-fluid">
+          <div class="text-center">
+            <img src="https://images.unsplash.com/photo-1519581246333-78162706b927?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fHJvYWQlMjB0cmlwfGVufDB8MXwwfHx8Mg%3D%3D"
+                 alt="Toy car on a cement step" class="img-fluid form-img">
+          </div>
         </div>
       </div>
     </section>
-    <section class="container">
-      <div id="carListings" class="row">
+    <section class="container mt-2">
+      <div id="carListings" class="row pt-3">
         <!-- STUB car card template -->
         <!-- <div class="col-12">
           <div class="shadow bg-light d-flex mb-4">
@@ -175,8 +240,8 @@
   <script src="https://cdn.auth0.com/js/auth0-spa-js/1.22/auth0-spa-js.production.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/jakeoverall/auth0provider-client/browser/Auth0Provider.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+          crossorigin="anonymous"></script>
   <!-- The start of our javascript -->
   <script src="app/App.js" type="module"></script>
 </body>

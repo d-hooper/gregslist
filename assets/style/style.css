@@ -35,6 +35,16 @@ ul {
   object-position: center;
 }
 
+.form-img {
+  max-height: 75dvh;
+  object-fit: cover;
+  width: 100%;
+}
+
+.house-form-img {
+  max-height: 55dvh;
+}
+
 .car-img {
   width: 40%;
   max-height: 33vh;
