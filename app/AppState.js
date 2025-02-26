@@ -77,7 +77,7 @@ class ObservableAppState extends EventEmitter {
         sqft: 1150,
         price: 250000,
         description: 'Fixer-upper starter home from the late 1980s',
-        imgUrl: 'https://rew-feed-images.global.ssl.fastly.net/imls/_cloud_media/property/residentialincome/98862307-1-835976ecc96808a93ea194115ae6c537-m.jpg'
+        imgUrl: 'https://images.unsplash.com/photo-1572120360610-d971b9d7767c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
       }
     ),
     new House(
@@ -87,19 +87,19 @@ class ObservableAppState extends EventEmitter {
         bathrooms: 3,
         sqft: 2650,
         price: 690000,
-        description: 'Newly renovated early 20th-century home',
-        imgUrl: 'https://rew-feed-images.global.ssl.fastly.net/imls/_cloud_media/property/residentialincome/98862307-1-835976ecc96808a93ea194115ae6c537-m.jpg'
+        description: 'Recently renovated early 20th-century home',
+        imgUrl: 'https://images.unsplash.com/photo-1465301055284-72f355cfd745?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
       }
     ),
     new House(
       {
         year: '2016',
         bedrooms: 5,
-        bathrooms: 3,
+        bathrooms: 3.5,
         sqft: 3420,
         price: 825000,
         description: 'Recently built 2-story home',
-        imgUrl: 'https://rew-feed-images.global.ssl.fastly.net/imls/_cloud_media/property/residentialincome/98862307-1-835976ecc96808a93ea194115ae6c537-m.jpg'
+        imgUrl: 'https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
       }
     ),
   ]

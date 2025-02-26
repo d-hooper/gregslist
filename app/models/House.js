@@ -1,4 +1,4 @@
-import { generateId } from "../utils/GenerateId"
+import { generateId } from "../utils/GenerateId.js"
 
 
 export class House {
