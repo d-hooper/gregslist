@@ -1,4 +1,6 @@
 import { AppState } from "../AppState.js";
+import { housesService } from "../services/HousesService.js";
+import { getFormData } from "../utils/FormHandler.js";
 
 
 export class HousesController {
@@ -20,4 +22,18 @@ export class HousesController {
     houseListingsElem.innerHTML = houseListingsContent
   }
 
+
+  createHouseListing() {
+    event.preventDefault()
+    const houseFormElem = event.target
+
+    const houseData = getFormData(houseFormElem)
+    console.log('form', houseData);
+
+    // housesService.createHouse(houseData)
+  }
+  
+  deleteHouseListing(houseId) {
+
+  }
 }

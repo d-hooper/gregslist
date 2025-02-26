@@ -45,7 +45,7 @@
         <div class="col-6">
           <div class="shadow px-5 py-4">
 
-            <form onsubmit="">
+            <form onsubmit="app.housesController.createHouseListing()">
               <div class="mb-3">
                 <label for="houseYear">House Year</label>
                 <input id="houseYear" name="year" type="number" required min="1637" max="2025"
@@ -72,8 +72,13 @@
               </div>
               <div class="mb-3">
                 <label for="houseDescription">House Description</label>
-                <input id="houseDescription" name="description" type="text" required min="20" max="120"
+                <input id="houseDescription" name="description" type="text" required max="120"
                        placeholder="Please include a short description">
+              </div>
+              <div class="mb-3">
+                <label for="houseImgUrl">House Image URL</label>
+                <input id="houseImgUrl" name="imgUrl" type="url" required max="1000"
+                       placeholder="https://...">
               </div>
               <div class="d-flex">
                 <button class="btn btn-outline-danger me-2" type="reset">
